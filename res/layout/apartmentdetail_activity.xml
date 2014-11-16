@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/price_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/price_d" />
+
+        <TextView
+            android:id="@+id/price_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ellipsize="end"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:scrollHorizontally="true" />
+            android:text="" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/city_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/city_d" />
+
+        <TextView
+            android:id="@+id/city_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ellipsize="end"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:scrollHorizontally="true" />
+            android:text="" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/state_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/state_d" />
+
+        <TextView
+            android:id="@+id/state_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ellipsize="end"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:scrollHorizontally="true" />
+            android:text="" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/zip_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/zip_d" />
+
+        <TextView
+            android:id="@+id/zip_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ellipsize="end"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:scrollHorizontally="true" />
+            android:text="" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/area_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/area_d" />
+
+        <TextView
+            android:id="@+id/area_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ellipsize="end"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:scrollHorizontally="true" />
+            android:text="" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/bedrooms_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/bedrooms_d" />
+
+        <TextView
+            android:id="@+id/bedrooms_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ellipsize="end"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:scrollHorizontally="true" />
+            android:text="" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/bathrooms_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/bathrooms_d" />
+
+        <TextView
+            android:id="@+id/bathrooms_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ellipsize="end"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:scrollHorizontally="true" />
+            android:text="" />
+    </LinearLayout>
+    
+</LinearLayout>

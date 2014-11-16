@@ -4,5 +4,19 @@
     <string name="app_name">EasyRent</string>
     <string name="welcome">Welcome to EasyRent</string>
     <string name="action_settings">Settings</string>
+    <string name="db_name">project.db</string>
+    <string name="apartmentsBtn">Available Apartments</string>
+    <string name="title_showapartments">Available Apartments</string>
+    <string name="price">Price</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">Zip</string>
+    <string name="price_d">Price:</string>
+    <string name="city_d">City:</string>
+    <string name="state_d">State:</string>
+    <string name="zip_d">Zip:</string>
+    <string name="area_d">Square Footage:</string>
+    <string name="bedrooms_d">Bedrooms:</string>
+    <string name="bathrooms_d">Bathrooms:</string>
 
 </resources>

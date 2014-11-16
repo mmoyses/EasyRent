@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ApartmentsActivity"></activity>
+        <activity 
+            android:name=".ApartmentDetailActivity"
+            android:parentActivityName=".ApartmentsActivity" >
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".ApartmentDetailActivity" />
+	    </activity>
     </application>
 
 </manifest>
