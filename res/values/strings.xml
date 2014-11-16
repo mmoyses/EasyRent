@@ -18,5 +18,6 @@
     <string name="area_d">Square Footage:</string>
     <string name="bedrooms_d">Bedrooms:</string>
     <string name="bathrooms_d">Bathrooms:</string>
+    <string name="amenities_d">Amenities:</string>
 
 </resources>
