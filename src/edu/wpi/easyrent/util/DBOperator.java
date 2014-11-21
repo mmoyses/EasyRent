@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import edu.wpi.easyrent.R;
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -24,7 +25,7 @@ public class DBOperator {
 
 	private DBOperator(Context context) {
 		// path of database file
-		String path = context.getFilesDir().getPath() + context.getString(R.string.db_name);
+		String path = context.getFilesDir().getPath() + "/" + context.getString(R.string.db_name);
 		db = SQLiteDatabase.openDatabase(path, null, SQLiteDatabase.OPEN_READWRITE);
 	}
 
@@ -42,7 +43,7 @@ public class DBOperator {
 	 * (on device)
 	 */
 	public static void copyDB(Context context) throws IOException, FileNotFoundException {
-		String path = context.getFilesDir().getPath() + context.getString(R.string.db_name);
+		String path = context.getFilesDir().getPath() + "/" + context.getString(R.string.db_name);
 		File file = new File(path);
 		if (!file.exists()) {
 			DBOpenHelper dbhelper = new DBOpenHelper(context, path, 1);
@@ -79,7 +80,7 @@ public class DBOperator {
 	public void execSQL(String sql, Object[] args) throws SQLException {
 		db.execSQL(sql, args);
 	}
-
+	
 	/**
 	 * execute sql query
 	 * 
@@ -90,6 +91,10 @@ public class DBOperator {
 	 */
 	public Cursor execQuery(String sql, String[] selectionArgs) throws SQLException {
 		return db.rawQuery(sql, selectionArgs);
+	}
+	
+	public int updateTable(String table, ContentValues values, String whereClause, String[] whereArgs) throws SQLException {
+		return db.update(table, values, whereClause, whereArgs);
 	}
 
 	/**

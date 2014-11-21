@@ -13,26 +13,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/welcome"
+        android:text="@string/requestsBtn"
         android:textSize="50sp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/apartmentsBtn"
+        android:id="@+id/openRequestsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
-        android:text="@string/apartmentsBtn" />
+        android:text="@string/openRequestsBtn" />
     
     <Button
-        android:id="@+id/requestsBtn"
+        android:id="@+id/paidRequestsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/apartmentsBtn"
+        android:layout_below="@+id/openRequestsBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
-        android:text="@string/requestsBtn" />
+        android:text="@string/paidRequestsBtn" />
+    
+    <Button
+        android:id="@+id/createRequestBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paidRequestsBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="@string/createRequestBtn" />
 
 </RelativeLayout>

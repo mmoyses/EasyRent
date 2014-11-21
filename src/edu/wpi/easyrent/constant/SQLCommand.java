@@ -13,4 +13,17 @@ public abstract class SQLCommand {
 	
 	// apartment amenities
 	public static final String APARTMENT_AMENITIES = "select amenity from apartmentamenity, amenity where apartmentid = ? and apartmentamenity.amenityid=amenity.amenityid";
+	
+	// open requests
+	public static final String OPEN_REQUESTS = "select issue, strftime('%m/%d/%Y',requestdate) as requestdate, estimatedtime, ispriority, apartmentid, servicerequestid as _id from servicerequest where fixeddate is null order by ispriority desc, requestdate";
+
+	// paid requests
+	public static final String PAID_REQUESTS = "select issue, strftime('%m/%d/%Y',requestdate) as requestdate, price, firstname || ' ' || lastname as 'serviceperson', apartmentid, servicerequestid as _id from servicerequest sr, serviceperson sp where price is not null and sr.servicepersonid=sp.servicepersonid order by requestdate desc";
+	
+	// service request details
+	public static final String SERVICE_REQUEST_DETAILS = "select servicerequestid, issue, strftime('%m/%d/%Y',requestdate) as requestdate, strftime('%m/%d/%Y',fixeddate) as fixeddate, estimatedtime, actualtime, ispriority, price, servicepersonid, apartmentid from servicerequest where servicerequestid = ?";
+	
+	// service person
+	public static final String SERVICE_PERSON = "select servicepersonid, firstname || ' ' || lastname as 'serviceperson' from serviceperson";
+	
 }

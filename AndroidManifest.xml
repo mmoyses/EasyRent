@@ -22,13 +22,47 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ApartmentsActivity"></activity>
+        <activity 
+            android:name=".ApartmentsActivity"
+            android:parentActivityName=".HomeActivity" >
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".ApartmentsActivity" />
+	    </activity>
         <activity 
             android:name=".ApartmentDetailActivity"
             android:parentActivityName=".ApartmentsActivity" >
 	        <meta-data
 	            android:name="android.support.PARENT_ACTIVITY"
 	            android:value=".ApartmentDetailActivity" />
+	    </activity>
+	    <activity 
+            android:name=".RequestsActivity"
+            android:parentActivityName=".HomeActivity" >
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".RequestsActivity" />
+	    </activity>
+	    <activity 
+            android:name=".OpenRequestsActivity"
+            android:parentActivityName=".RequestsActivity" >
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".OpenRequestsActivity" />
+	    </activity>
+	    <activity 
+            android:name=".PaidRequestsActivity"
+            android:parentActivityName=".RequestsActivity" >
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".PaidRequestsActivity" />
+	    </activity>
+	    <activity 
+            android:name=".ServiceRequestDetailActivity"
+            android:parentActivityName=".OpenRequestsActivity" >
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".ServiceRequestDetailActivity" />
 	    </activity>
     </application>
 

@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class HomeActivity extends Activity implements OnClickListener {
 	
-	private Button apartmentsBtn;
+	private Button apartmentsBtn, requestsBtn;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,8 @@ public class HomeActivity extends Activity implements OnClickListener {
 		
 		apartmentsBtn = (Button) this.findViewById(R.id.apartmentsBtn);
 		apartmentsBtn.setOnClickListener(this);
+		requestsBtn = (Button) this.findViewById(R.id.requestsBtn);
+		requestsBtn.setOnClickListener(this);
 		
 		// copy database file
 		try {
@@ -35,6 +37,9 @@ public class HomeActivity extends Activity implements OnClickListener {
 			String sql = SQLCommand.AVAILABLE_APARTMENTS;
 			Intent intent = new Intent(this, ApartmentsActivity.class);
 			intent.putExtra("sql", sql);
+			this.startActivity(intent);
+		} else if (id == R.id.requestsBtn) {
+			Intent intent = new Intent(this, RequestsActivity.class);
 			this.startActivity(intent);
 		}
 	}

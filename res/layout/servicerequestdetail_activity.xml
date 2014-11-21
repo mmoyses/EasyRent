@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/issue_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/issue_d" />
+
+        <EditText
+            android:id="@+id/issue_v"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:hint="@string/describe" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/requestdate_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/requestdate_d" />
+
+		<TextView
+            android:id="@+id/requestdate_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ellipsize="end"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:scrollHorizontally="true" />
+            android:text="" />
+
+		<TextView
+            android:id="@+id/fixeddate_d"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/fixeddate_d" />
+
+		<EditText
+		    android:id="@+id/fixeddate_v"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginStart="20dp"
+		    android:layout_marginTop="15dp"
+		    android:inputType="date" />
+		            
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/estimatedtime_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/estimatedtime_d" />
+
+        <EditText
+            android:id="@+id/estimatedtime_v"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+            android:ems="10"
+            android:inputType="number" />
+        
+        <TextView
+            android:id="@+id/actualtime_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/actualtime_d" />
+
+        <EditText
+            android:id="@+id/actualtime_v"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ispriority_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/ispriority_d" />
+
+        <CheckBox
+            android:id="@+id/ispriority_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:text="" />
+        
+        <TextView
+            android:id="@+id/price_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/price_d" />
+
+        <EditText
+            android:id="@+id/price_v"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/serviceperson_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/serviceperson_d" />
+
+        <Spinner
+            android:id="@+id/serviceperson_v"
+            android:layout_width="350dp"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/apid_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="@string/apid_d" />
+
+		<TextView
+            android:id="@+id/apid_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ellipsize="end"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginStart="20dp"
+        	android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:scrollHorizontally="true" />
+            android:text="" />
+            
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+		
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updateReqBtn" />
+        
+    </LinearLayout>
+
+    
+
+</LinearLayout>

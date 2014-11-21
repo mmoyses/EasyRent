@@ -19,5 +19,25 @@
     <string name="bedrooms_d">Bedrooms:</string>
     <string name="bathrooms_d">Bathrooms:</string>
     <string name="amenities_d">Amenities:</string>
+    <string name="requestsBtn">Service Requests</string>
+    <string name="openRequestsBtn">Open Requests</string>
+    <string name="paidRequestsBtn">Paid Requests</string>
+    <string name="createRequestBtn">Create Request</string>
+    <string name="issue">Issue</string>
+    <string name="requestdate">Request Date</string>
+    <string name="estimatedtime">Estimated Time</string>
+    <string name="ispriority">Priority?</string>
+    <string name="apartmentid">Apt ID</string>
+    <string name="serviceperson">Service Person</string>
+    <string name="issue_d">Issue:</string>
+    <string name="describe">Describe the issue</string>
+    <string name="requestdate_d">Request Date:</string>
+    <string name="fixeddate_d">Fixed Date:</string>
+    <string name="estimatedtime_d">Estimated Time:</string>
+    <string name="actualtime_d">Actual Time:</string>
+    <string name="ispriority_d">Priority?:</string>
+    <string name="serviceperson_d">Service Person:</string>
+    <string name="apid_d">Apartment ID:</string>
+    <string name="updateReqBtn">Update Request</string>
 
 </resources>
