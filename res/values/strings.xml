@@ -12,6 +12,7 @@
     <string name="state">State</string>
     <string name="zip">Zip</string>
     <string name="price_d">Price:</string>
+    <string name="address_d">Address:</string>
     <string name="city_d">City:</string>
     <string name="state_d">State:</string>
     <string name="zip_d">Zip:</string>
@@ -39,5 +40,8 @@
     <string name="serviceperson_d">Service Person:</string>
     <string name="apid_d">Apartment ID:</string>
     <string name="updateReqBtn">Update Request</string>
+    <string name="noapartments">No available apartments found!</string>
+    <string name="norequests">No open requests found!</string>
+    <string name="filterstate">Filter by state:</string>
 
 </resources>

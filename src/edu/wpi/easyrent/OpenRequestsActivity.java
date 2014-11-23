@@ -36,6 +36,8 @@ public class OpenRequestsActivity extends Activity {
 			SimpleCursorAdapter adapter = new SimpleCursorAdapter(getApplicationContext(), R.layout.openrequests, cursor, new String[] { "issue", "requestdate", "estimatedtime", "ispriority", "apartmentid" }, new int[] { R.id.issue, R.id.requestdate, R.id.estimatedtime, R.id.ispriority, R.id.apartmentid }, SimpleCursorAdapter.IGNORE_ITEM_VIEW_TYPE);
 			adapter.setViewBinder(new ListViewer());
 			listView.setAdapter(adapter);
+			View empty = (View) this.findViewById(R.id.emptyrequests);
+			listView.setEmptyView(empty);
 		}
 	}
 

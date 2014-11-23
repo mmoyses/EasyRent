@@ -8,8 +8,11 @@ public abstract class SQLCommand {
 	// check available apartments
 	public static final String AVAILABLE_APARTMENTS = "select price, city, state, zip, apartment.apartmentid as _id from apartment, floorplan, location where apartmentid not in (select apartmentid from lease where enddate > date('now')) and apartment.floorplanid = floorplan.floorplanid and apartment.locationid=location.locationid order by price asc";
 	
+	// check available apartments by state
+	public static final String AVAILABLE_APARTMENTS_BY_STATE = "select price, city, state, zip, apartment.apartmentid as _id from apartment, floorplan, location where apartmentid not in (select apartmentid from lease where enddate > date('now')) and apartment.floorplanid = floorplan.floorplanid and apartment.locationid=location.locationid and state = ? order by price asc";
+	
 	// apartment details
-	public static final String APARTMENT_DETAILS = "select price, city, state, zip, bedroom, bathroom, area from apartment, floorplan, location where apartment.apartmentid = ? and apartment.floorplanid = floorplan.floorplanid and apartment.locationid=location.locationid";
+	public static final String APARTMENT_DETAILS = "select price, address, apartmentnumber, city, state, zip, bedroom, bathroom, area from apartment, floorplan, location where apartment.apartmentid = ? and apartment.floorplanid = floorplan.floorplanid and apartment.locationid=location.locationid";
 	
 	// apartment amenities
 	public static final String APARTMENT_AMENITIES = "select amenity from apartmentamenity, amenity where apartmentid = ? and apartmentamenity.amenityid=amenity.amenityid";
@@ -25,5 +28,8 @@ public abstract class SQLCommand {
 	
 	// service person
 	public static final String SERVICE_PERSON = "select servicepersonid, firstname || ' ' || lastname as 'serviceperson' from serviceperson";
+	
+	// states
+	public static final String STATES = "select distinct state from location order by state asc";
 	
 }

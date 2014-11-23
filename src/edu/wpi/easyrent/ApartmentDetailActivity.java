@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class ApartmentDetailActivity extends Activity {
 	
-	private TextView price, city, state, zip, area, bedrooms, bathrooms;
+	private TextView price, address, city, state, zip, area, bedrooms, bathrooms;
 	private ScrollView scrollView;
 	
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class ApartmentDetailActivity extends Activity {
 		setContentView(R.layout.apartmentdetail_activity);
 		
 		price = (TextView) this.findViewById(R.id.price_v);
+		address = (TextView) this.findViewById(R.id.address_v);
 		city = (TextView) this.findViewById(R.id.city_v);
 		state = (TextView) this.findViewById(R.id.state_v);
 		zip = (TextView) this.findViewById(R.id.zip_v);
@@ -44,17 +45,20 @@ public class ApartmentDetailActivity extends Activity {
 		while (cursor.moveToNext()) {
 			Float price = cursor.getFloat(0);
 			this.price.setText(Constants.PRICE_FORMATTER.format(price));
-			String city = cursor.getString(1);
+			String address = cursor.getString(1);
+			String apartmentnumber = cursor.getString(2);
+			this.address.setText(address + " #" + apartmentnumber);
+			String city = cursor.getString(3);
 			this.city.setText(city);
-			String state = cursor.getString(2);
+			String state = cursor.getString(4);
 			this.state.setText(state);
-			String zip = cursor.getString(3);
+			String zip = cursor.getString(5);
 			this.zip.setText(zip);
-			Integer bedrooms = cursor.getInt(4);
+			Integer bedrooms = cursor.getInt(6);
 			this.bedrooms.setText(bedrooms.toString());
-			Integer bathrooms = cursor.getInt(5);
+			Integer bathrooms = cursor.getInt(7);
 			this.bathrooms.setText(bathrooms.toString());
-			Float area = cursor.getFloat(6);
+			Float area = cursor.getFloat(8);
 			this.area.setText(Constants.AREA_FORMATTER.format(area));
 		}
 		cursor.close();

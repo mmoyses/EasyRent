@@ -1,6 +1,5 @@
 package edu.wpi.easyrent;
 
-import edu.wpi.easyrent.constant.SQLCommand;
 import edu.wpi.easyrent.util.DBOperator;
 import android.app.Activity;
 import android.content.Intent;
@@ -34,9 +33,7 @@ public class HomeActivity extends Activity implements OnClickListener {
 	public void onClick(View v) {
 		int id = v.getId();
 		if (id == R.id.apartmentsBtn) {
-			String sql = SQLCommand.AVAILABLE_APARTMENTS;
 			Intent intent = new Intent(this, ApartmentsActivity.class);
-			intent.putExtra("sql", sql);
 			this.startActivity(intent);
 		} else if (id == R.id.requestsBtn) {
 			Intent intent = new Intent(this, RequestsActivity.class);
