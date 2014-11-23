@@ -8,20 +8,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="edu.wpi.easyrent.HomeActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/welcome"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo" />
 
     <Button
         android:id="@+id/apartmentsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
         android:text="@string/apartmentsBtn" />
