@@ -17,31 +17,35 @@
         android:contentDescription="@string/logo"
         android:src="@drawable/logo" />
 
-    <Button
-        android:id="@+id/apartmentsBtn"
+    <EditText
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
-        android:text="@string/apartmentsBtn" />
+        android:layout_marginTop="125dp"
+        android:hint="@string/username"
+        android:ems="10" />
     
-    <Button
-        android:id="@+id/createRequestBtn"
+    <EditText
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/apartmentsBtn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
-        android:text="@string/createRequestBtn" />
-    
+        android:layout_alignStart="@+id/username"
+        android:layout_alignLeft="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="30dp"
+        android:hint="@string/password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
     <Button
-        android:id="@+id/requestsBtn"
+        android:id="@+id/signinBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView1"
+        android:layout_below="@+id/password"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
-        android:text="@string/requestsBtn" />
-    
+        android:layout_marginTop="27dp"
+        android:text="@string/signin" />
+
 </RelativeLayout>

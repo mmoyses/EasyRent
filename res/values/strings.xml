@@ -50,5 +50,8 @@
     <string name="address">Address</string>
     <string name="apartmentnumber">#</string>
     <string name="createBtn">Create</string>
+    <string name="signin">Signin</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
 
 </resources>

@@ -35,13 +35,4 @@
         android:layout_marginTop="55dp"
         android:text="@string/paidRequestsBtn" />
     
-    <Button
-        android:id="@+id/createRequestBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/paidRequestsBtn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
-        android:text="@string/createRequestBtn" />
-
 </RelativeLayout>

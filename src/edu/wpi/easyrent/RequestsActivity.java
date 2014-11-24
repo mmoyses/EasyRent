@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class RequestsActivity extends Activity implements OnClickListener {
 	
-	private Button openRequestsBtn, paidRequestsBtn, createRequestBtn;
+	private Button openRequestsBtn, paidRequestsBtn;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,6 @@ public class RequestsActivity extends Activity implements OnClickListener {
 		openRequestsBtn.setOnClickListener(this);
 		paidRequestsBtn = (Button) this.findViewById(R.id.paidRequestsBtn);
 		paidRequestsBtn.setOnClickListener(this);
-		createRequestBtn = (Button) this.findViewById(R.id.createRequestBtn);
-		createRequestBtn.setOnClickListener(this);
 	}
 
 	public void onClick(View v) {
@@ -31,9 +29,6 @@ public class RequestsActivity extends Activity implements OnClickListener {
 			this.startActivity(intent);
 		} else if (id == R.id.paidRequestsBtn) {
 			Intent intent = new Intent(this, PaidRequestsActivity.class);
-			this.startActivity(intent);
-		} else if (id == R.id.createRequestBtn) {
-			Intent intent = new Intent(this, FindApartmentActivity.class);
 			this.startActivity(intent);
 		}
 	}

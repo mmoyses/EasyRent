@@ -1,5 +1,6 @@
 package edu.wpi.easyrent;
 
+import edu.wpi.easyrent.security.SecurityContext;
 import edu.wpi.easyrent.util.DBOperator;
 import android.app.Activity;
 import android.content.Intent;
@@ -10,7 +11,7 @@ import android.widget.Button;
 
 public class HomeActivity extends Activity implements OnClickListener {
 	
-	private Button apartmentsBtn, requestsBtn;
+	private Button apartmentsBtn, requestsBtn, createRequestBtn;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,16 @@ public class HomeActivity extends Activity implements OnClickListener {
 		apartmentsBtn.setOnClickListener(this);
 		requestsBtn = (Button) this.findViewById(R.id.requestsBtn);
 		requestsBtn.setOnClickListener(this);
+		createRequestBtn = (Button) this.findViewById(R.id.createRequestBtn);
+		createRequestBtn.setOnClickListener(this);
+		
+		SecurityContext ctx = SecurityContext.getInstance();
+		if (ctx.isLandlord()) {
+			apartmentsBtn.setVisibility(View.INVISIBLE);
+			createRequestBtn.setVisibility(View.INVISIBLE);
+		} else {
+			requestsBtn.setVisibility(View.INVISIBLE);
+		}
 		
 		// copy database file
 		try {
@@ -37,6 +48,9 @@ public class HomeActivity extends Activity implements OnClickListener {
 			this.startActivity(intent);
 		} else if (id == R.id.requestsBtn) {
 			Intent intent = new Intent(this, RequestsActivity.class);
+			this.startActivity(intent);
+		} else if (id == R.id.createRequestBtn) {
+			Intent intent = new Intent(this, FindApartmentActivity.class);
 			this.startActivity(intent);
 		}
 	}
