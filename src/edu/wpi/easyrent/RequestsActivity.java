@@ -33,7 +33,7 @@ public class RequestsActivity extends Activity implements OnClickListener {
 			Intent intent = new Intent(this, PaidRequestsActivity.class);
 			this.startActivity(intent);
 		} else if (id == R.id.createRequestBtn) {
-			Intent intent = new Intent(this, ApartmentsActivity.class);
+			Intent intent = new Intent(this, FindApartmentActivity.class);
 			this.startActivity(intent);
 		}
 	}

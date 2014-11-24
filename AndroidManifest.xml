@@ -64,6 +64,20 @@
 	            android:name="android.support.PARENT_ACTIVITY"
 	            android:value=".ServiceRequestDetailActivity" />
 	    </activity>
+	    <activity 
+            android:name=".FindApartmentActivity"
+            android:parentActivityName=".RequestsActivity" >
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".FindApartmentActivity" />
+	    </activity>
+	    <activity 
+            android:name=".CreateServiceRequestActivity"
+            android:parentActivityName=".FindApartmentActivity" >
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".CreateServiceRequestActivity" />
+	    </activity>
     </application>
 
 </manifest>

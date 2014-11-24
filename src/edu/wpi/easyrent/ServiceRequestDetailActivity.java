@@ -24,7 +24,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ServiceRequestDetailActivity extends Activity implements OnClickListener{
+public class ServiceRequestDetailActivity extends Activity implements OnClickListener {
 	
 	private TextView requestdate, apartmentid;
 	private EditText issue, fixeddate, estimatedtime, actualtime, price;
@@ -51,7 +51,7 @@ public class ServiceRequestDetailActivity extends Activity implements OnClickLis
 		updateBtn = (Button) this.findViewById(R.id.updateBtn);
 		updateBtn.setOnClickListener(this);
 
-		// get the sql string delivered from the HomeActivity
+		// get the sql string delivered from the OpenRequestsActivity
 		Intent intent = this.getIntent();
 		srid = intent.getIntExtra("srid", 0);
 		String[] args = new String[1];
@@ -109,8 +109,6 @@ public class ServiceRequestDetailActivity extends Activity implements OnClickLis
 		int id = v.getId();
 		if (id == R.id.updateBtn) {
 			DBOperator operator = DBOperator.getInstance(getApplicationContext());
-			
-			//update servicerequest set issue = ?, estimatedtime = ?, actualtime = ?, ispriority = ?, price = ?, servicepersonid = ? where servicerequestid = ?
 			
 			String table = "servicerequest";
 			ContentValues values = new ContentValues();

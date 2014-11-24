@@ -96,6 +96,10 @@ public class DBOperator {
 	public int updateTable(String table, ContentValues values, String whereClause, String[] whereArgs) throws SQLException {
 		return db.update(table, values, whereClause, whereArgs);
 	}
+	
+	public long insert(String table, ContentValues values) throws SQLException {
+		return db.insert(table, null, values);
+	}
 
 	/**
 	 * execute query without arguments

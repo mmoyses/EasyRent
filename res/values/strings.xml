@@ -43,5 +43,12 @@
     <string name="norequests">No open requests found!</string>
     <string name="filterstate">Filter by state:</string>
     <string name="logo">Logo</string>
+    <string name="title_findapartment">Select your apartment</string>
+    <string name="zipcode">Zip Code</string>
+    <string name="findBtn">Find</string>
+    <string name="notfound">No apartment found for that zip code</string>
+    <string name="address">Address</string>
+    <string name="apartmentnumber">#</string>
+    <string name="createBtn">Create</string>
 
 </resources>

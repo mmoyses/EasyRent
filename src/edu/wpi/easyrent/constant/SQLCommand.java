@@ -32,4 +32,8 @@ public abstract class SQLCommand {
 	// states
 	public static final String STATES = "select distinct state from location order by state asc";
 	
+	// check available apartments by zip
+	public static final String FIND_APARTMENTS_BY_ZIP = "select address, apartmentnumber, city, state, apartment.apartmentid as _id from apartment, location where apartment.locationid=location.locationid and zip = ? order by address,apartmentnumber asc";
+	
+	
 }
