@@ -24,7 +24,9 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
-        android:text="@string/openRequestsBtn" />
+        android:text="@string/openRequestsBtn"
+        android:textColor="@android:color/white"
+        android:background="@color/blue" />
     
     <Button
         android:id="@+id/paidRequestsBtn"
@@ -33,6 +35,8 @@
         android:layout_below="@+id/openRequestsBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
-        android:text="@string/paidRequestsBtn" />
+        android:text="@string/paidRequestsBtn"
+        android:textColor="@android:color/white"
+        android:background="@color/blue" />
     
 </RelativeLayout>

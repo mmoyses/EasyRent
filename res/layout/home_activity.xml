@@ -24,7 +24,9 @@
         android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
-        android:text="@string/apartmentsBtn" />
+        android:text="@string/apartmentsBtn"
+        android:textColor="@android:color/white"
+        android:background="@color/blue" />
     
     <Button
         android:id="@+id/createRequestBtn"
@@ -33,7 +35,9 @@
         android:layout_below="@+id/apartmentsBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
-        android:text="@string/createRequestBtn" />
+        android:text="@string/createRequestBtn"
+        android:textColor="@android:color/white"
+        android:background="@color/blue" />
     
     <Button
         android:id="@+id/requestsBtn"
@@ -42,6 +46,8 @@
         android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
-        android:text="@string/requestsBtn" />
+        android:text="@string/requestsBtn"
+        android:textColor="@android:color/white"
+        android:background="@color/blue" />
     
 </RelativeLayout>

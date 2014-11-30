@@ -46,6 +46,8 @@
         android:layout_below="@+id/password"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
-        android:text="@string/signin" />
+        android:text="@string/signin"
+        android:textColor="@android:color/white"
+        android:background="@color/blue" />
 
 </RelativeLayout>
