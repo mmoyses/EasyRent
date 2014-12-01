@@ -12,7 +12,8 @@
         android:gravity="center"
         android:text="@string/title_showapartments"
         android:textSize="22sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@color/blue" />
     
     <LinearLayout
         android:layout_width="match_parent"
