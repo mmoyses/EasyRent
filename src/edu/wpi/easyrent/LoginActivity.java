@@ -40,8 +40,13 @@ public class LoginActivity extends Activity implements OnClickListener {
 					this.username.requestFocus();
 					SecurityContext ctx = SecurityContext.getInstance();
 					ctx.setUser(username);
-					Intent intent = new Intent(this, HomeActivity.class);
-					this.startActivity(intent);
+					if (username.equals("tenant")) {
+						Intent intent = new Intent(this, FindApartmentActivity.class);
+						this.startActivity(intent);
+					} else {
+						Intent intent = new Intent(this, RequestsActivity.class);
+						this.startActivity(intent);
+					}
 				} else {
 					this.username.setText("");
 					this.password.setText("");

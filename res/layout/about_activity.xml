@@ -40,7 +40,9 @@
             android:id="@+id/apartmentsBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/apartmentsBtn" />
+            android:text="@string/apartmentsBtn"
+            android:textColor="@android:color/white"
+        	android:background="@color/blue" />
      
     </LinearLayout>
         <TextView
@@ -65,14 +67,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/maintenancerequest" />
+            android:text="@string/maintenancerequest"
+            android:textColor="@android:color/white"
+        	android:background="@color/blue" />
         
         <Button
             android:id="@+id/btnEmployeelogin"
-            android:layout_width="250sp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/employeelogin" />
+            android:layout_marginTop="15dp"
+            android:text="@string/employeelogin"
+            android:textColor="@android:color/white"
+        	android:background="@color/blue" />
 
     </LinearLayout>
 
