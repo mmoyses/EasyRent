@@ -30,6 +30,7 @@ public class HomeActivity extends Activity implements OnClickListener {
 			apartmentsBtn.setVisibility(View.INVISIBLE);
 			createRequestBtn.setVisibility(View.INVISIBLE);
 		} else {
+			apartmentsBtn.setVisibility(View.INVISIBLE);
 			requestsBtn.setVisibility(View.INVISIBLE);
 		}
 		
