@@ -47,10 +47,19 @@ public class AboutActivity extends ActionBarActivity implements OnClickListener 
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
+		 // Handle presses on the action bar items
+	    switch (item.getItemId()) {
+	        case R.id.home:
+	        	Intent intent = new Intent(this, AboutActivity.class);
+				this.startActivity(intent);
+	            return true;
+	        case R.id.availableapts:
+	        	 intent = new Intent(this, ApartmentsActivity.class);
+				this.startActivity(intent);
+	            return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
 	}
 	
 	public void onClick(View v) {
